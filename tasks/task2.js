@@ -12,9 +12,7 @@ const products = [
 ];
 
 function getProductsNotInPriceRange(products) {
-   let a = products.filter((sort)=>sort.price<100||sort.price>500);
-   console.log(a);
-   return a;
+  return products = (products.filter((sort)=>sort.price<100||sort.price>500)).map((x)=>x.name); 
 }
 
 console.log(getProductsNotInPriceRange(products));
