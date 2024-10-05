@@ -12,7 +12,9 @@ const products = [
 ];
 
 function getProductsNotInPriceRange(products) {
-  // Ваш код
+   let a = products.filter((sort)=>sort.price<100||sort.price>500);
+   console.log(a);
+   return a;
 }
 
 console.log(getProductsNotInPriceRange(products));
