@@ -4,7 +4,7 @@
 "ВИКОРИСТОВУВАТИ ЛИШЕ МЕТОДИ МАСИВІВ filter, map, sort. Для того щоб залишити лише унікальні категорії товарів можна використати конструкцію new Set, або використати метод filter()/indexOf()/forEach()"
 
 function getPopularCategories(products) {
-  products = (products.filter((sort)=>sort.sales>=5)).sort((a,b)=>b.sales-a.sales);
+  products = (products.filter((product)=>product.sales>=5)).sort((a,b)=>b.sales-a.sales);
   let unique = [...new Set(products.map((sort)=>sort.category))];
   return unique;
   

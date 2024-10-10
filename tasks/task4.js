@@ -4,11 +4,10 @@
 
 function getMostFuelEfficientCars(cars, brand) {
    if(cars.every((x)=>x.fuelConsumption<6)){
-    cars = (cars.filter((x)=>x.brand===brand)).sort((a,b)=>a.fuelConsumption-b.fuelConsumption);
+    cars = (cars.filter((car)=>car.brand===brand)).sort((a,b)=>a.fuelConsumption-b.fuelConsumption);
    }else{
     cars = []
    }
-   console.log(cars);
    return cars;
 }
 
